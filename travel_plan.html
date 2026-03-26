@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Plan: New Delhi → New Jersey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+        }
+        header {
+            background: linear-gradient(135deg, #0f3460, #16213e);
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px 40px;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        header .dates {
+            font-size: 1.1em;
+            opacity: 0.85;
+            font-weight: 400;
+        }
+        header .duration {
+            font-size: 0.95em;
+            opacity: 0.7;
+            margin-top: 4px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 28px 30px;
+            margin-bottom: 24px;
+        }
+        .card h2 {
+            font-size: 1.4em;
+            color: #0f3460;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8ecf1;
+        }
+        .card h3 {
+            font-size: 1.1em;
+            color: #16213e;
+            margin: 18px 0 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            font-size: 0.92em;
+        }
+        th {
+            background: #f7f9fc;
+            color: #0f3460;
+            font-weight: 600;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        tr:hover td {
+            background: #fafbfd;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .notice-box {
+            background: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 16px 20px;
+            border-radius: 6px;
+            margin: 10px 0;
+            font-size: 0.95em;
+        }
+        .notice-box a {
+            font-weight: 600;
+        }
+        .price-range {
+            color: #555;
+            margin-top: 8px;
+            font-size: 0.93em;
+        }
+        .badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            font-size: 0.75em;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+        .badge.favourite {
+            background: #fce4ec;
+            color: #c62828;
+        }
+        .rating {
+            color: #f9a825;
+            font-weight: 600;
+        }
+        .day-block {
+            margin-bottom: 20px;
+            padding: 18px 20px;
+            background: #f7f9fc;
+            border-radius: 8px;
+            border-left: 4px solid #0f3460;
+        }
+        .day-block h3 {
+            margin: 0 0 10px;
+            color: #0f3460;
+            font-size: 1.05em;
+        }
+        .day-block .time-slot {
+            margin-bottom: 8px;
+        }
+        .day-block .time-slot strong {
+            color: #16213e;
+            display: inline-block;
+            width: 90px;
+        }
+        .budget-total {
+            font-weight: 700;
+            font-size: 1.05em;
+            color: #0f3460;
+            background: #f0f4ff;
+        }
+        .exchange-note {
+            font-size: 0.88em;
+            color: #777;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #888;
+            font-size: 0.9em;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5em; }
+            .card { padding: 18px 16px; }
+            th, td { padding: 8px 6px; font-size: 0.85em; }
+            .day-block .time-slot strong { width: 80px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>&#9992; New Delhi &rarr; New Jersey</h1>
+    <div class="dates">April 22, 2026 &mdash; May 12, 2026</div>
+    <div class="duration">20 Nights &middot; United States</div>
+</header>
+
+<div class="container">
+
+    <!-- COUNTRY INFO -->
+    <div class="card">
+        <h2>&#127758; Destination Overview</h2>
+        <table>
+            <tr><td><strong>Destination</strong></td><td>New Jersey, United States</td></tr>
+            <tr><td><strong>Local Currency</strong></td><td>USD &mdash; United States Dollar ($)</td></tr>
+            <tr><td><strong>Origin Currency</strong></td><td>INR &mdash; Indian Rupee (&#8377;)</td></tr>
+            <tr><td><strong>Exchange Rate</strong></td><td>1 USD &asymp; &#8377;86 &nbsp;|&nbsp; 1 INR &asymp; $0.0116</td></tr>
+        </table>
+    </div>
+
+    <!-- FLIGHTS -->
+    <div class="card">
+        <h2>&#9992;&#65039; Flights</h2>
+        <div class="notice-box">
+            <strong>Flight data temporarily unavailable.</strong><br>
+            Please check <a href="https://www.kiwi.com/en/search/tiles/new-delhi-india/newark-new-jersey-united-states/2026-04-22/2026-05-12" target="_blank">Kiwi.com</a> for the latest flights from New Delhi (DEL) to Newark (EWR).
+        </div>
+        <p class="price-range"><strong>Typical price range (Economy, Round-trip):</strong> &#8377;40,000 &ndash; &#8377;80,000</p>
+    </div>
+
+    <!-- ACCOMMODATION -->
+    <div class="card">
+        <h2>&#127968; Accommodation (Top 5 &mdash; 20 Nights)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Price (Total)</th>
+                    <th>/Night</th>
+                    <th>Rating</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Spacious and clean apartment<span class="badge">Superhost</span><br><small>1 bedroom</small></td>
+                    <td>&#8377;94,291</td>
+                    <td>&#8377;4,715</td>
+                    <td><span class="rating">&#9733; 4.79</span></td>
+                    <td><a href="https://www.airbnb.com/rooms/40390528" target="_blank">Book</a></td>
+                </tr>
+                <tr>
+                    <td>Serene Pink Retreat, NYC Access<br><small>1 bedroom</small></td>
+                    <td>&#8377;96,484</td>
+                    <td>&#8377;4,824</td>
+                    <td><span class="rating">&#9733; 5.0</span></td>
+                    <td><a href="https://www.airbnb.com/rooms/1561997868006672479" target="_blank">Book</a></td>
+                </tr>
+                <tr>
+                    <td>In the heart of Downtown Paterson<br><small>1 bed</small></td>
+                    <td>&#8377;1,00,760</td>
+                    <td>&#8377;5,038</td>
+                    <td><span class="rating">&#9733; 4.67</span></td>
+                    <td><a href="https://www.airbnb.com/rooms/42449121" target="_blank">Book</a></td>
+                </tr>
+                <tr>
+                    <td>Lovely bedroom near train station<span class="badge">Superhost</span><br><small>1 bed</small></td>
+                    <td>&#8377;1,03,282</td>
+                    <td>&#8377;5,164</td>
+                    <td><span class="rating">&#9733; 5.0</span></td>
+                    <td><a href="https://www.airbnb.com/rooms/671033267936399673" target="_blank">Book</a></td>
+                </tr>
+                <tr>
+                    <td>Bright &amp; Comfortable Room w/ Workspace near NYC!<span class="badge favourite">Guest favourite</span><br><small>1 bed</small></td>
+                    <td>&#8377;1,07,380</td>
+                    <td>&#8377;5,369</td>
+                    <td><span class="rating">&#9733; 4.91</span></td>
+                    <td><a href="https://www.airbnb.com/rooms/1151475103392796878" target="_blank">Book</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- DAY-BY-DAY ITINERARY -->
+    <div class="card">
+        <h2>&#128197; Day-by-Day Itinerary</h2>
+
+        <div class="day-block">
+            <h3>Day 1 &mdash; Wed, April 22</h3>
+            <div class="time-slot"><strong>Morning:</strong> Arrive at Newark (EWR). Transfer to accommodation &amp; check in.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Rest and settle in. Explore the local neighborhood on foot.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>Houlihan&rsquo;s</em>, 491 Route 70, Brick Township (American cuisine).</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 2 &mdash; Thu, April 23</h3>
+            <div class="time-slot"><strong>Morning:</strong> Visit <em>Liberty State Park</em> &mdash; stunning views of the Statue of Liberty &amp; NYC skyline.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Walk along the <em>Hudson River Waterfront Walkway</em>.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>Charkol</em>, 38 South Street, Freehold (Steak House). Open 11:30am&ndash;10:00pm.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 3 &mdash; Fri, April 24</h3>
+            <div class="time-slot"><strong>Morning:</strong> Visit <em>Newark Museum of Art</em> &mdash; New Jersey&rsquo;s largest museum.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Stroll through <em>Branch Brook Park</em> &mdash; famous for cherry blossoms in April!</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>618</em>, 618 Park Avenue, Freehold (Fine Dining). Open Fr 16:00&ndash;23:00.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 4 &mdash; Sat, April 25</h3>
+            <div class="time-slot"><strong>Morning:</strong> Visit <em>Great Falls National Historical Park</em>, Paterson &mdash; one of the largest waterfalls in the eastern US.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Explore downtown Paterson &amp; local shops.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>MJ&rsquo;s Pizza Bar &amp; Grill</em>, 905 Bay Boulevard, Berkeley Township.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 5 &mdash; Sun, April 26</h3>
+            <div class="time-slot"><strong>Morning:</strong> Brunch at <em>Brownstone Pancake Factory</em>, 979 Cedar Bridge Ave, Brick Township. Open Su 08:00&ndash;16:00.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Relax at <em>The Jersey Shore beaches</em> &mdash; Point Pleasant or Seaside Heights.</div>
+            <div class="time-slot"><strong>Evening:</strong> Sunset walk along the boardwalk. Casual seafood dinner nearby.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 6 &mdash; Mon, April 27</h3>
+            <div class="time-slot"><strong>Morning:</strong> Drive to <em>Princeton</em>. Campus tour of <em>Princeton University</em>.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Explore Nassau Street shops, Princeton Art Museum.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>618</em>, 618 Park Avenue, Freehold (Fine Dining). Open Mo: closed &mdash; try nearby Freehold restaurants.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 7 &mdash; Tue, April 28</h3>
+            <div class="time-slot"><strong>Morning:</strong> Visit <em>Six Flags Great Adventure</em>, Jackson &mdash; thrilling roller coasters &amp; rides!</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Continue at Six Flags &mdash; Safari adventure &amp; more rides.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>Outback Steakhouse</em>, 2770 Hooper Avenue, Brick Township (American/Steak).</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 8 &mdash; Wed, April 29</h3>
+            <div class="time-slot"><strong>Morning:</strong> Leisure morning. Grocery shopping &amp; self-care.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Visit <em>Branch Brook Park</em> again for late cherry blossoms &amp; a picnic.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>Charkol</em>, 38 South Street, Freehold (Steak House).</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 9 &mdash; Thu, April 30</h3>
+            <div class="time-slot"><strong>Morning:</strong> Head south towards <em>Atlantic City</em>.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Walk the famous <em>Atlantic City Boardwalk</em>. Visit the Steel Pier &amp; shops.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner &amp; entertainment on the Boardwalk. Try local seafood restaurants.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 10 &mdash; Fri, May 1</h3>
+            <div class="time-slot"><strong>Morning:</strong> Continue exploring Atlantic City &mdash; Absecon Lighthouse, beach walk.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Drive to <em>Cape May</em> historic district. Victorian architecture tour.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner in Cape May. Sunset at Cape May Point State Park.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 11 &mdash; Sat, May 2</h3>
+            <div class="time-slot"><strong>Morning:</strong> Cape May beach morning. Visit the Cape May Lighthouse.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Drive back north. Stop at a local farm stand or winery.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>618</em>, 618 Park Avenue, Freehold (Fine Dining). Open Sa 16:00&ndash;23:00.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 12 &mdash; Sun, May 3</h3>
+            <div class="time-slot"><strong>Morning:</strong> Brunch at <em>Brownstone Pancake Factory</em>, Brick Township. Open Su 08:00&ndash;16:00.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Visit <em>Jersey Shore beaches</em> &mdash; Asbury Park boardwalk &amp; music scene.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>Jersey Freeze</em>, 120 Manalapan Ave, Freehold Township (American/Burger). Open Su 11:00&ndash;21:00.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 13 &mdash; Mon, May 4</h3>
+            <div class="time-slot"><strong>Morning:</strong> Visit <em>Liberty State Park</em> &mdash; take the ferry to Ellis Island &amp; Statue of Liberty.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Continue exploring Ellis Island Immigration Museum.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>Houlihan&rsquo;s</em>, 491 Route 70, Brick Township (American).</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 14 &mdash; Tue, May 5</h3>
+            <div class="time-slot"><strong>Morning:</strong> Day trip to explore Hoboken &amp; the <em>Hudson River Waterfront Walkway</em>.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Visit local cafes, Carlo&rsquo;s Bakery (Cake Boss!), waterfront parks.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>Charkol</em>, 38 South Street, Freehold (Steak House). Open 11:30am&ndash;10:00pm.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 15 &mdash; Wed, May 6</h3>
+            <div class="time-slot"><strong>Morning:</strong> Visit <em>Newark Museum of Art</em> &mdash; explore galleries you missed on Day 3.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Explore the Ironbound District in Newark &mdash; famous for Portuguese &amp; Spanish cuisine.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>MJ&rsquo;s Pizza Bar &amp; Grill</em>, 905 Bay Boulevard, Berkeley Township.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 16 &mdash; Thu, May 7</h3>
+            <div class="time-slot"><strong>Morning:</strong> Visit <em>Great Falls National Historical Park</em>, Paterson for morning light photography.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Explore Paterson Museum &amp; historic Silk City district.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>618</em>, 618 Park Avenue, Freehold (Fine Dining). Open Th 16:00&ndash;22:00.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 17 &mdash; Fri, May 8</h3>
+            <div class="time-slot"><strong>Morning:</strong> Return to <em>Six Flags Great Adventure</em>, Jackson &mdash; rides you missed!</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Wild Safari drive-through experience.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>Outback Steakhouse</em>, 2770 Hooper Avenue, Brick Township.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 18 &mdash; Sat, May 9</h3>
+            <div class="time-slot"><strong>Morning:</strong> Brunch at <em>Brownstone Pancake Factory</em>, Brick Township. Open Sa 08:00&ndash;20:00.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> <em>Jersey Shore beaches</em> &mdash; Long Branch or Sandy Hook for a relaxed beach day.</div>
+            <div class="time-slot"><strong>Evening:</strong> Dinner at <em>Jersey Freeze</em>, 120 Manalapan Ave, Freehold Township. Open Sa 11:00&ndash;21:30.</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 19 &mdash; Sun, May 10</h3>
+            <div class="time-slot"><strong>Morning:</strong> Leisurely walk at <em>Liberty State Park</em>. Last views of the NYC skyline.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Souvenir shopping &amp; packing.</div>
+            <div class="time-slot"><strong>Evening:</strong> Farewell dinner at <em>Charkol</em>, 38 South Street, Freehold (Steak House).</div>
+        </div>
+
+        <div class="day-block">
+            <h3>Day 20 &mdash; Mon, May 11</h3>
+            <div class="time-slot"><strong>Morning:</strong> Final check-out. Last-minute local exploration.</div>
+            <div class="time-slot"><strong>Afternoon:</strong> Transfer to Newark (EWR) airport.</div>
+            <div class="time-slot"><strong>Evening:</strong> Depart for New Delhi. Safe travels! &#9992;&#65039;</div>
+        </div>
+
+    </div>
+
+    <!-- BUDGET ESTIMATE -->
+    <div class="card">
+        <h2>&#128176; Budget Estimate (in INR)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Details</th>
+                    <th style="text-align:right;">Amount (&#8377;)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Flights</td>
+                    <td>Round-trip DEL &harr; EWR (estimated)</td>
+                    <td style="text-align:right;">&#8377;55,000</td>
+                </tr>
+                <tr>
+                    <td>Accommodation</td>
+                    <td>20 nights (budget option)</td>
+                    <td style="text-align:right;">&#8377;94,291</td>
+                </tr>
+                <tr>
+                    <td>Food &amp; Dining</td>
+                    <td>20 days &times; &#8377;3,000/day</td>
+                    <td style="text-align:right;">&#8377;60,000</td>
+                </tr>
+                <tr>
+                    <td>Local Transport</td>
+                    <td>20 days &times; &#8377;1,500/day</td>
+                    <td style="text-align:right;">&#8377;30,000</td>
+                </tr>
+                <tr>
+                    <td>Activities &amp; Attractions</td>
+                    <td>Entry fees, tours, experiences</td>
+                    <td style="text-align:right;">&#8377;25,000</td>
+                </tr>
+                <tr>
+                    <td>Miscellaneous</td>
+                    <td>Shopping, tips, emergencies</td>
+                    <td style="text-align:right;">&#8377;15,000</td>
+                </tr>
+                <tr class="budget-total">
+                    <td colspan="2"><strong>Grand Total</strong></td>
+                    <td style="text-align:right;"><strong>&#8377;2,79,291</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="exchange-note">* Approximate USD equivalent: $3,248 (at 1 USD = &#8377;86)</p>
+    </div>
+
+    <!-- USEFUL RESTAURANTS -->
+    <div class="card">
+        <h2>&#127860; Restaurant Directory</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Restaurant</th>
+                    <th>Cuisine</th>
+                    <th>Location</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Jersey Freeze</strong></td>
+                    <td>American / Burger</td>
+                    <td>120 Manalapan Ave, Freehold Township</td>
+                    <td>Su-Th 11:00-21:00; Fr,Sa 11:00-21:30</td>
+                </tr>
+                <tr>
+                    <td><strong>Charkol</strong></td>
+                    <td>Steak House</td>
+                    <td>38 South Street, Freehold</td>
+                    <td>Mo-Su 11:30am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td><strong>618</strong></td>
+                    <td>Fine Dining</td>
+                    <td>618 Park Avenue, Freehold</td>
+                    <td>Tu-Th 16:00-22:00; Fr-Sa 16:00-23:00; Su 14:00-21:00</td>
+                </tr>
+                <tr>
+                    <td><strong>Brownstone Pancake Factory</strong></td>
+                    <td>Pancakes</td>
+                    <td>979 Cedar Bridge Ave, Brick Township</td>
+                    <td>Su-We 08:00-16:00; Th-Sa 08:00-20:00</td>
+                </tr>
+                <tr>
+                    <td><strong>Outback Steakhouse</strong></td>
+                    <td>American / Steak</td>
+                    <td>2770 Hooper Ave, Brick Township</td>
+                    <td>&mdash;</td>
+                </tr>
+                <tr>
+                    <td><strong>Houlihan&rsquo;s</strong></td>
+                    <td>American</td>
+                    <td>491 Route 70, Brick Township</td>
+                    <td>&mdash;</td>
+                </tr>
+                <tr>
+                    <td><strong>MJ&rsquo;s Pizza Bar &amp; Grill</strong></td>
+                    <td>Pizza / American</td>
+                    <td>905 Bay Blvd, Berkeley Township</td>
+                    <td>&mdash;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<footer>
+    Generated by Travel Planner Agent &mdash; Powered by Postman Flows + MCP
+</footer>
+
+</body>
+</html>
